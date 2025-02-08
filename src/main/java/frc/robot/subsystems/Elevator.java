@@ -119,6 +119,10 @@ public class Elevator implements AutoCloseable {
 
     SmartDashboard.putNumber("InflectionPointPos", inflectionPoint.position);
     SmartDashboard.putNumber("InflectionPointVel", inflectionPoint.velocity);
+    SmartDashboard.putNumber("SetpointPos", m_setpoint.position);
+    SmartDashboard.putNumber("SetpointVel", m_setpoint.velocity);
+    SmartDashboard.putNumber("GoalPos", goalState.position);
+    SmartDashboard.putNumber("GoalVel", goalState.velocity);
 
     m_setpoint = next;
   }
