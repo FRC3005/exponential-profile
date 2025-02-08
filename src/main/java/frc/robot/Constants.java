@@ -16,18 +16,18 @@ public class Constants {
   public static final double kElevatorKi = 0;
   public static final double kElevatorKd = 0;
 
-  public static final double kElevatorMaxV = 10.0; // volts (V)
+  public static final double kElevatorMaxV = 8.0; // volts (V)
   public static final double kElevatorkS = 0.0; // volts (V)
   public static final double kElevatorkG = 0.62; // volts (V)
-  public static final double kElevatorkV = 3.9; // volts (V)
-  public static final double kElevatorkA = 0.06; // volts (V)
+  public static final double kElevatorkV = 2.67; // volts (V)
+  public static final double kElevatorkA = 0.8; // volts (V)
 
   public static final double kElevatorGearing = 5.0;
   public static final double kElevatorDrumRadius = Units.inchesToMeters(1.0);
   public static final double kCarriageMass = Units.lbsToKilograms(12); // kg
 
-  public static final double kSetpointMeters = Units.inchesToMeters(42.875);
-  public static final double kLowerkSetpointMeters = Units.inchesToMeters(15);
+  public static final double kSetpointMeters = 1.0; //Units.inchesToMeters(42.875);
+  public static final double kLowerkSetpointMeters = Units.inchesToMeters(0);
   // Encoder is reset to measure 0 at the bottom, so minimum height is 0.
   public static final double kMinElevatorHeightMeters = 0.0;
   public static final double kMaxElevatorHeightMeters = Units.inchesToMeters(50);

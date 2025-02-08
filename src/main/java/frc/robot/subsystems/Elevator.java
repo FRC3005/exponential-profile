@@ -115,6 +115,11 @@ public class Elevator implements AutoCloseable {
 
     m_motor.setVoltage(pidOutput + feedforwardOutput);
 
+    var inflectionPoint = m_profile.calculateInflectionPoint(m_setpoint, goalState);
+
+    SmartDashboard.putNumber("InflectionPointPos", inflectionPoint.position);
+    SmartDashboard.putNumber("InflectionPointVel", inflectionPoint.velocity);
+
     m_setpoint = next;
   }
 
